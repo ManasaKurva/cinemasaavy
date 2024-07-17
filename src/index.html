@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinemaSavvy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/5f/df/a9/5fdfa98001a201aed81d5119d0456915.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white"> 
+    <!-- nav bar -->
+    <nav class="ng-transparent p-7 sm:py-4 sm:px-4 mb-5">
+        <div class="container mx-auto flex items-center justify-between">
+            <!-- Left side: Logo and Name -->
+            <div class="flex items-center space-x-2">
+                <img src="https://i.pinimg.com/originals/5f/df/a9/5fdfa98001a201aed81d5119d0456915.jpg" alt="Logo" class="h-10 w-10 rounded-full">
+                <span class="text-3xl font-bold text-white hidden sm:block title">CinemaSavvy</span>
+            </div>
+            <!-- Right side: Search Bar and Button -->
+            <div class="flex items-center space-x-2">
+                <input type="text" placeholder="Search for movie..." class="px-8 py-2 font-bold border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-black search" name="search">
+                <button class="px-5 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 font-bold search-btn">Search</button>
+            </div>
+        </div>
+    </nav>
+    <!-- hero-header   -->
+     <!-- slider -->
+    
+      
+      
+     <div class="w-full rounded-lg mb-5 sliderDiv flex overflow-x-auto px-14 py-4 scrollbar-none gap-5 ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="hidden md:block size-9 text-white text-[30px] absolute mt-[250px] cursor-pointer font-bold slideLeft">
+            <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="hidden md:block size-9 text-white text-[30px] absolute mx-16 mt-[250px] cursor-pointer right-0 font-bold slideRight">
+            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+        </svg>
+    </div>
+    <div class="width-full  m-5 rounded-lg mb-5 moviesList py-4 glass-effect rounded-lg" >
+
+    </div>
+    
+     <div class="width-full  m-5 rounded-lg mb-5 moviesByGenre " >
+
+     </div>
+     
+  <script src="app.js"></script>
+</body>
+</html>
